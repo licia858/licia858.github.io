@@ -11,11 +11,11 @@ body {
     font-size: 18px;
     line-height: 150%;
     color: #333;
-    background: #efeee7;
+    background: pink;
   }
   
   header {
-    background: #333;
+    background: rgb(153, 60, 133);
   }
   
   h1 {
@@ -23,7 +23,7 @@ body {
     margin: 0;
     margin-bottom: 20px;
     font-size: 28px;
-    color: #eee;
+    color: rgb(17, 11, 11);
     text-align: center;
   }
   
