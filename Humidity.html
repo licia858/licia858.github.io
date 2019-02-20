@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cities Weather</title>
+<!--Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                            <li><a href= "MaxTemp.html">Max Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="WindSpeed.html">Wind Speed</a></li>
+                       </ul>
+                    </li>
+                  
+                    <li class="active"><a href="Comparision.html">Comparison</a></li>
+                    <li class="active"><a href="Data.html">Data</a></li>
+                   
+                </div>
+            </nav>
+                
+            <div class="container">
+                    <div class="row">
+                            <!--First of Two Columns-->
+                            <div class="col-md-8">
+                              <h1>Humidity</h1>
+                              <img src="assets/images/Fig2.png" width="600" height="600">
+                              <p>There seems to be 2 clusters: one for cities near the equator with 90-100% humidity and another
+                                  north of the equator were the humidity is 80-90%.
+                              </p>
+                            </div>
+                            <!--Second of Two Columns-->
+                            <div class="col-md-4">
+                            <h2>Visualizations</h2>
+                                <div class ="col-md-6">
+                                <img src="assets/images/Fig1.png" width="150" height="150"><img src="assets/images/Fig2.png" width="150" height="150">
+                                </div>
+                                <div class ="col-md-6">                                
+                                <img src="assets/images/Fig3.png" width="150" height="150"><img src="assets/images/Fig4.png" width="150" height="150">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                    
+
+
+    
+</body>

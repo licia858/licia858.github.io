@@ -1,63 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-<!-- stlye goes in the head-->
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-  <link rel="stylesheet" type="tex/css" href="style.css">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Cities Weather</title>
+<!--Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Alicia Briscoe</h1>
-  <img src="http://lorempixel.com/output/nature-q-c-640-480-7.jpg" alt="Alicia" height="100" width="100"/>
-  <br>
-  <br>
+        
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href= "MaxTemp.html">Max Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a href="WindSpeed.html">Wind Speed</a></li>
+                       </ul>
+                    </li>
+                  
+                    <li class="active"><a href="Comparision.html">Comparison</a></li>
+                    <li class="active"><a href="Data.html">Data</a></li>
+                   
+                </div>
+            </nav>
+                
+              <div class="container">
+                  <h1>Summary: Latitude vs. X</h1>
+                  <br>
+                  <br>
+                    <div class="col-md-8">
+                        <img src="assets/images/Fig1.png" align="left" width="300" height="300" >
+                        <br>
+                        <br>
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  
+                          To accomplish this analyisi, we first pulled data from the OpenWeatherMap API to assemble a dataset 
+                          on over 500 cities. 
+                        </p>
+                        <br>
+                        <br>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. 
+                             Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides
+                            the source data and veisualizations created as part of the analysis, as well as explanations and descriptions
+                            of any trends and correlations witnessed.
+                        </p>
+                      
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Visualizations</h2>
+                        <div class ="col-md-6">
+                            <img src="assets/images/Fig1.png" width="150" height="150"><img src="assets/images/Fig2.png" width="150" height="150">
+                        </div>
+                        <div class ="col-md-6">                                
+                            <img src="assets/images/Fig3.png" width="150" height="150"><img src="assets/images/Fig4.png" width="150" height="150">
+                        </div>
+                     </div>
+               </div>
+    
+                    
 
-  <p>"Sometimes in life, you have to do a few things that are absolutely off beat. 
-      You have to walk down an obscure path in order to find success.
-      " K.A. DeWolf, Make Money Live Happy </p>
-  <br>
-  <br>
-  <p>Permanence, perseverance and persistence in spite of all 
-      obstacles, discouragements, and impossibilities: It is this, 
-      that in all things distinguishes the strong soul from the weak.
-       – Thomas Carlyle.</p>
-  <br>
-  <br>
 
-  <h3>My Social Media</h3>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/alicia-briscoe-784b3421"><target="_blank"> Linkedin</a></li>
-    <li><a href="https://github.com/licia858"><target="_blank">Github</a></li>
-  </ul>
-
-  <li><a href="BubbleRide.png"> <target= _blank> bubble ride graph</a></li> 
-  <!--just inclued the path to the file , may need to ../ -->
-
-  <table>
-      <thead>
-        <tr>
-          <th colspan="4">My Favs</th>
-        </tr>
-        <tr>
-          <th>Movies</th>
-          <th>Books</th>
-          <th>Activities</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Pulp Fiction</td>
-          <td>Coldest Winter Ever</td>
-          <td>Traveling</td>
-        </tr>
-        <tr>
-            <td>The Avengers</td>
-            <td>The Color Purple</td>
-            <td>Fashion</td>
-          </tr>
-  
+    
 </body>
-
-</html>
